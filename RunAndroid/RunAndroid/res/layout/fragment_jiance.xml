@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/btnrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/Test_complete"
+            android:textSize="20sp" />
+
+       <!--  <Button
+            android:id="@+id/btnpf"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_selector4"
+            android:text="@string/Score" /> -->
+
+        <Button
+            android:id="@+id/btnjc"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_selector4"
+            android:text="@string/To_detect" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnrl"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:visibility="gone" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/jdt_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/jdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/jdt" />
+
+        <TextView
+            android:id="@+id/smz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Scans" />
+
+        <TextView
+            android:id="@+id/texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/jdt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:max="100"
+            android:progressDrawable="@drawable/progressbar_color" />
+
+        <TextView
+            android:id="@+id/numberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/progressBar"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ksjc"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_selector4"
+        android:text="@string/Starting_test" />
+
+    <FrameLayout
+        android:id="@+id/ksjc_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#000" >
+
+                <TextView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/back"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Developers_options"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/sv_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 系统info -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_sys"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_selector1"
+                            android:text="@string/Sys_info" />
+
+                        <ScrollView
+                            android:id="@+id/list_sys_cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:background="#fff"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <HorizontalScrollView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:scrollbars="none" >
+
+                                    <TextView
+                                        android:id="@+id/list_sys"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" >
+                                    </TextView>
+                                </HorizontalScrollView>
+
+                                <View
+                                    android:layout_width="0.1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#000" />
+
+                                <HorizontalScrollView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:scrollbars="none" >
+
+                                    <TextView
+                                        android:id="@+id/list_sys2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" >
+                                    </TextView>
+                                </HorizontalScrollView>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                    <!-- cpu info -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_cpu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_selector1"
+                            android:text="@string/Cpu_info" />
+
+                        <LinearLayout
+                            android:id="@+id/list_cpu_cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:background="#fff"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <ListView
+                                android:id="@+id/list_cpu"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </ListView>
+
+                            <View
+                                android:layout_width="0.1dp"
+                                android:layout_height="match_parent"
+                                android:background="#000" />
+
+                            <ListView
+                                android:id="@+id/list_cpu2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </ListView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 存储info -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_mem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_selector1"
+                            android:text="@string/Mem_info" />
+
+                        <LinearLayout
+                            android:id="@+id/list_mem_cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="800dp"
+                            android:background="#fff"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <ListView
+                                android:id="@+id/list_mem"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </ListView>
+
+                            <View
+                                android:layout_width="0.1dp"
+                                android:layout_height="match_parent"
+                                android:background="#000" />
+
+                            <ListView
+                                android:id="@+id/list_mem2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </ListView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 电池info -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_bat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_selector1"
+                            android:text="@string/Bat_info" />
+
+                        <ScrollView
+                            android:id="@+id/list_bat_cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="280dp"
+                            android:background="#fff"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <HorizontalScrollView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:scrollbars="none" >
+
+                                    <TextView
+                                        android:id="@+id/list_bat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" >
+                                    </TextView>
+                                </HorizontalScrollView>
+
+                                <View
+                                    android:layout_width="0.1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#000" />
+
+                                <HorizontalScrollView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:scrollbars="none" >
+
+                                    <TextView
+                                        android:id="@+id/list_bat2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" >
+                                    </TextView>
+                                </HorizontalScrollView>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_selector1"
+                        android:text="@string/More" />
+
+                    <ImageButton
+                        android:id="@+id/btn_img_ppg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kfryxxmax" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/more_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#000" >
+
+            <TextView
+                android:id="@+id/btn_back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="@string/back"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/More"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_sim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector1"
+                    android:text="@string/Sim_info" />
+
+                <LinearLayout
+                    android:id="@+id/list_sim_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <HorizontalScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/list_sim_tv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </HorizontalScrollView>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000" />
+
+                    <HorizontalScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/list_sim_tv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector1"
+                    android:text="@string/Sensor_info" />
+
+                <HorizontalScrollView
+                    android:id="@+id/list_sensor_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:background="#fff"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/list_sensor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Shared -->
+    <string name="app_name">奔跑吧安卓</string>
+    <string name="On_network">没有网络连接！</string>
+
+    <!-- activity home -->
+    <string name="pick">头像</string>
+    <string name="menu">菜单</string>
+    <string name="hf">换肤</string>
+    <string name="wx_ts">温馨提示！</string>
+    <string name="bj_msg">o(≧ω≦)o：\n\t\t\t客官别急！您想要的伦家很快就会给你的啦！(@^_^@✿)</string>
+    <string name="bj_ts">已带着您急切的心情\n\t去报告主yin！</string>
+    <string name="bj_waiting">\thui奔中...</string>
+    <string name="cjfu">催交皮肤了</string>
+    <string name="bj_succes">主yin回信，收到</string>
+    <string name="bj_fialure">信差中途被截，请重新派遣</string>
+    <string name="cuicui">催催</string>
+    <string name="zddb">再等等吧</string>
+    <string name="wenxin">温馨</string>
+    <string name="tishi">提示</string>
+    <string name="Mobile_phone_detection">手机检测</string>
+    <string name="Clearing_up_the_rubbish">清理垃圾</string>
+    <string name="Process_management">进程管理</string>
+    <string name="Software_management">软件管理</string>
+    <string name="Toast_exitapp">再按一次退出程序</string>
+
+    <!-- activity personal -->
+    <string name="Setting">设置</string>
+    <string name="Save">保存</string>
+    <string name="Setting_nickname">设置呢称</string>
+    <string name="Hint_nickname">最多输入10个字符</string>
+    <string name="Toast_nick_not_isnull">呢称不能为空</string>
+    <string name="Toast_update_success">更新成功</string>
+    <string name="Toast_update_failure">更新失败</string>
+    <string name="Dl_ok">确定</string>
+    <string name="Dl_cancel">取消</string>
+    <string name="Dl_update_nick">更换呢称</string>
+    <string name="Dl_update_pick">更换头像</string>
+    <string name="Dl_msg_local_upload">从相册选择</string>
+    <string name="Dl_waiting">正在更新...</string>
+    <string name="Personal_center">个人中心</string>
+    <string name="Hobbies_signature">爱好，签名：</string>
+    <string name="Sex_selection">选择性别</string>
+    <string name="Sex_man">男 </string>
+    <string name="Sex_woman">女</string>
+    <string name="Year_Month_Day">yyyy年MM月dd日 HH:mm:ss </string>
+    <string name="Bingding_email">绑定邮箱</string>
+    <string name="Not_bingding">未绑定</string>
+    <string name="Already_bingding">已绑定</string>
+    <string name="Bingding_email_succes">绑定邮箱成功</string>
+    <string name="Bingding_email_failure">绑定邮箱失败\n</string>
+    <string name="Not_local_user_please_login">本地用户不存在,请登录</string>
+    <string name="Please_enter">请输入：</string>
+    <string name="Not_enter_text">未输入文字!</string>
+    <string name="Update_sex_succes">更新性别成功</string>
+    <string name="Update_sex_failure">更新性别失败\n</string>
+    <string name="Update_Hobbies_signature_succes">更新爱好，签名成功</string>
+    <string name="Update_Hobbies_signature_failure">更新爱好，签名失败\n</string>
+    <string name="Longdown_number_copy">长按数字复制</string>
+    <string name="Man_or_woman">男/女</string>
+    <string name="Say_something">说点什么吧...</string>
+    <string name="Update_nick">更新呢称</string>
+    <string name="Update_pick">更新头像</string>
+
+    <!-- activity SettingActivity -->
+    <string name="Old_pwd">旧密码：</string>
+    <string name="New_pwd">新密码：</string>
+    <string name="Password_no_empty">密码不能为空！</string>
+    <string name="Pwd_up_succes">密码修改成功</string>
+    <string name="Pwd_up_failure">密码修改失败\n</string>
+    <string name="Please_enter_Run">请输入Run号：</string>
+    <string name="number_no_empty">号码不能为空！</string>
+    <string name="Update_pwd">修改密码</string>
+    <string name="Query_user">查询用户</string>
+    <string name="Query_user_succes">查询用户成功</string>
+    <string name="Query_user_failure">查询用户失败\n</string>
+    <string name="nick_mh">呢称：\t\t</string>
+    <string name="Query">查询</string>
+    <string name="Query_waiting">正在查询...</string>
+    <string name="Logout">退出登录</string>
+
+    <!-- activity web_baseactivity -->
+    <string name="Dialog_message">登录邮箱后如果链接不能点击请复制链接到屏幕下方编辑框点击打开</string>
+    <string name="Email">邮箱</string>
+    <string name="Search">搜索</string>
+    <string name="Open">打开</string>
+    <string name="Link_address">链接地址：</string>
+
+    <!-- activity login_register -->
+    <string name="Dialog_title_register">用户注册</string>
+    <string name="Dialog_title_login">用户登录</string>
+    <string name="Dialog_title_reset">密码重置</string>
+    <string name="Dialog_waiting_register">注册中...</string>
+    <string name="Register_succes">注册成功</string>
+    <string name="Register_failure">注册失败\n</string>
+    <string name="Dialog_waiting_login">登录中...</string>
+    <string name="Dialog_waiting_reset">发送请求中...</string>
+    <string name="Please_enter_email_pwd">请填写邮箱与密码！</string>
+    <string name="Please_enter_email">请填写邮箱！</string>
+    <string name="Run">Run号：</string>
+    <string name="Reset_succes_please_login">重置密码请求成功，请登录到：</string>
+    <string name="Email_runing_verify_reset">邮箱进行验证重置</string>
+    <string name="Reset_pwd_Please_failure">重置密码请求失败\n</string>
+    <string name="Please_enter_email_run_pwd">请填写邮箱/Run号或密码!</string>
+    <string name="Email_run">邮箱/Run号：</string>
+    <string name="Pwd1">密码：</string>
+    <string name="Pwd">密码：最多16个字符</string>
+    <string name="Register">注册</string>
+    <string name="Login">登录</string>
+    <string name="RegisterN">注  册</string>
+    <string name="Email_fh">邮箱：</string>
+    <string name="Back_login">返回登录</string>
+    <string name="Reset_Pwd">忘记密码了？</string>
+    <string name="Reset_pwd">重置密码</string>
+    <string name="Rgister_email">注册邮箱：</string>
+    <string name="Send_verify_email">发送验证邮件</string>
+    <string name="Login_succes">登陆成功</string>
+    <string name="Login_failure">登陆失败\n</string>
+
+    <!-- activity menu -->
+    <string name="options">选&#160;&#160;项</string>
+    <string name="App_recommended">应用推荐</string>
+    <string name="Contact_me_us">联系我(们)</string>
+    <string name="feedback">意见反馈</string>
+    <string name="mall">商城</string>
+    <string name="About">关于</string>
+    <string name="Not_open">暂未开通</string>
+    <string name="Detailed_fh">应用详细说明</string>
+    <string name="Sdk">当前版本：</string>
+    <string name="Detailed_S">\t《奔跑吧安卓》是一款安卓手机检测，缓存清理，进程释放与软件管理相结合的开源应用软件。\n\t设计之初，本着对Android系统的进一步深入研究编写了这个应用程序。由于没有系统的应用过美工设计软件，对于应用中图形化界面的实现引用了部分网络图片(由百度图片资源获取)，如此部分图片资源有幸同个人，机构著权作品雷同，若有介意，请到【联系我(们)】获取联系地址予以联系，收到信息后立即撤出。\n\t本应用软件开放源代码，不具备任何盈利。仅供普通用户和开发人员测试使用。应用程序由个人开发，没有服务器，数据存储由Bmob后端云服务支持。\n\t《奔跑吧安卓》的实现和完善离不开强大的思维和技术后援。在此，\n\t感谢：GitHup(GitHup开源社区网)；CSDN(CSDN技术论坛)；知乎(知乎技术分享)等个人和机构。\n\t着重感谢：@Android开源级开发⑥群，一群无私奉献还全是段子手的程序猿(媛)们(^_^)。\n\t最后，希望在接下来的更多版本有更多的人参与开发，完善和使用此应用。\n\n\n\n\tGitHup地址：\n\t</string>
+    <string name="App">应&#160;用</string>
+    <string name="Author">开发者</string>
+    <string name="About_app">关于...应用</string>
+    <string name="About_author">关于...开发者</string>
+    <string name="The_developer_alliance">开发者联盟</string>
+    <string name="Text_S">客官，您好！\n\t\t首先在此感谢你对《奔跑吧安卓》的使用，如果您在使用期间遇到不好的体验情况或有更好的体验更改意见，请在【意见反馈】中提交您的问题和建议，在收到您的问题和建议后会根据具体分析更好的去实现和更改。如果您是一位开发者，有与《奔跑吧安卓》一样的实现需求，请到【关于】-->【关于应用】中获取代码存放地址。\n\t\t如若您还有其他必须联系开发者，请使用以下联系地址：</string>
+    <string name="Text_X">\t\t如非必要，请勿打扰。谢谢您的理解与配合！\n\n</string>
+    <string name="Lx_title">简&#160;述</string>
+    <string name="The_tucao">吐槽一下(^_^)</string>
+    <string name="Name_nick">姓名/称呼：</string>
+    <string name="Nv_nan">女士/先生</string>
+    <string name="Wenti_Jy">问题/建议：</string>
+    <string name="please_enter_text">请输入内容</string>
+    <string name="Lianxi_fs">联系方式：</string>
+    <string name="Lianxi_fs_s">电话/QQ/微信/邮箱/其他</string>
+    <string name="Text_not_isnull">内容不能为空！</string>
+    <string name="Submit">提交</string>
+    <string name="Submit_waiting">提交中...</string>
+    <string name="Submit_success">提交成功</string>
+    <string name="Submit_failure">提交失败\n</string>
+
+    <!-- fragment jiance -->
+    <string name="Accurate_fit_resolution_other_resolution_are_trying_to_fit">（准确率适配720*1280分辨率【其他分辨率正在努力适配】）</string>
+    <string name="Support">支持</string>
+    <string name="Does_not_support">不支持</string>
+    <string name="This_moment_value">（时刻值）</string>
+    <string name="Starting_test">开始检测</string>
+    <string name="Ok_test">检测完成</string>
+    <string name="Scans">扫描中...</string>
+    <string name="Core">核）</string>
+    <string name="Test_complete">检测完成！</string>
+    <string name="Not_logged_in">未登录，请先登录</string>
+    <string name="To_detect">重新检测</string>
+    <string name="Score">评分</string>
+    <string name="Score_f">评分失败！</string>
+    <string name="back">返回</string>
+    <string name="Developers_options">开发人员选项</string>
+    <string name="Sys_info">系统信息</string>
+    <string name="Cpu_info">CPU信息</string>
+    <string name="Mem_info">存储信息</string>
+    <string name="Bat_info">电池信息</string>
+    <string name="More">更多...</string>
+    <string name="Sim_info">ID/SIM卡信息</string>
+    <string name="Sensor_info">传感器信息</string>
+
+    <!-- fragment qingli -->
+    <string name="Rubbish">垃圾</string>
+    <string name="app">个应用</string>
+    <string name="Clean_up_the">清理了</string>
+    <string name="Complete">完成！</string>
+    <string name="Are_cleanings">清理中..</string>
+    <string name="Are_cleaning_up">正在清理：</string>
+    <string name="Mobile_phone_there_are_rubbish">手机有垃圾</string>
+    <string name="Mobile_phone_is_very_clean">手机很干净</string>
+    <string name="Scanning">扫描：</string>
+    <string name="To_scan">重新扫描</string>
+    <string name="Clear">一键清理</string>
+    <string name="No_apps_need_to_clean_up">没有清理项</string>
+
+    <!-- fragment jingcheng -->
+    <string name="Memory">的内存</string>
+    <string name="Process_The_release_of">个进程,释放了</string>
+    <string name="Finish">结束了</string>
+    <string name="Occupation_memory">占用内存：</string>
+    <string name="Please_careful_operation">个（请谨慎操作！）</string>
+    <string name="Sys_process">\t系统进程：</string>
+    <string name="The_operation_can_choose">个（可选择操作）</string>
+    <string name="User_process">\t用户进程：</string>
+    <string name="A">个</string>
+    <string name="Available_the_total_memory">可用/总内存：</string>
+    <string name="Selection_deselect">全选/反选</string>
+    <string name="Accelerate">一键加速 ☜</string>
+    <string name="Show_sys_process">显示系统进程</string>
+    <string name="Hidden_sys_process">隐藏系统进程</string>
+    <string name="Run_process">运行中进程：</string>
+    <string name="Memory_available">内存可用：</string>
+
+    <!-- fragment ruanjian -->
+    <string name="Version">版本：</string>
+    <string name="Size">大小：</string>
+
+    <!-- item data info -->
+    <string name="a">内存可用：</string>
+
+    <!-- item data info2 -->
+    <string name="Detailed">详细</string>
+
+    <!-- item cpu names and values -->
+    <!-- item mem names and values -->
+    <!-- item iphone info -->
+    <!-- item task manager -->
+    <!-- item widget -->
+    <!-- list footer -->
+
+
+    <!-- dialog pf and pf2 -->
+    <string name="Scores">评分结果:</string>
+    <string name="In_the_calculation">正在计算...</string>
+
+</resources>

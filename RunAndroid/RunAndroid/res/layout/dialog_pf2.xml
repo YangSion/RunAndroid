@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/btns_focused2" >
+
+        <LinearLayout
+            android:id="@+id/llyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/ttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/gif_bg"
+                android:text="@string/Scores"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/llyou"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bar"
+            android:layout_centerInParent="true"
+            android:text="@string/In_the_calculation" />
+    </RelativeLayout>
+
+</RelativeLayout>

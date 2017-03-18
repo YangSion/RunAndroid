@@ -1,0 +1,318 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- view_login_start -->
+
+    <FrameLayout
+        android:id="@+id/view_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <com.yangsion.runandroid.widget.CircleImageView
+                android:id="@+id/l_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pick"
+                app:border_color="@color/san_oooooo"
+                app:border_width="1dp" />
+
+            <LinearLayout
+                android:id="@+id/l_nameandpwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/l_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_selector5ss"
+                    android:hint="@string/Email_run"
+                    android:inputType="text"
+                    android:paddingLeft="6dp" />
+
+                <EditText
+                    android:id="@+id/l_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_selector5ss"
+                    android:hint="@string/Pwd1"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/l_nameandpwd"
+                android:layout_alignLeft="@+id/l_nameandpwd"
+                android:layout_alignRight="@+id/l_nameandpwd"
+                android:layout_alignStart="@+id/l_nameandpwd"
+                android:layout_below="@+id/l_nameandpwd"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/forget_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="end"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/Reset_Pwd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_selector4"
+                    android:text="@string/Register"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/btn_selector7"
+                    android:text="@string/Login"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:id="@+id/ll_qtdl_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="66dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/qq_logo"
+                    android:gravity="center"
+                    android:text="QQ" />
+
+                <TextView
+                    android:id="@+id/weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableTop="@drawable/weibo_logo"
+                    android:gravity="center_horizontal"
+                    android:text="新浪微博" />
+
+                <TextView
+                    android:id="@+id/weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/weixin_logo"
+                    android:gravity="center_horizontal"
+                    android:text="微信" />
+            </LinearLayout> 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_qtdl_list"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_marginBottom="10dp"
+                android:text="其他登录方式：" />
+
+
+
+
+
+            -->
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- view_login_end -->
+
+
+    <!-- view_register_start -->
+
+    <FrameLayout
+        android:id="@+id/view_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/r_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/RegisterN"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/r_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/r_title"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/btn_selector5ss"
+                android:hint="@string/Email_fh"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingLeft="6dp" />
+
+            <EditText
+                android:id="@+id/r_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/r_email"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_selector5ss"
+                android:hint="@string/Pwd"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingLeft="6dp" />
+
+            <Button
+                android:id="@+id/r_btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/r_email"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="166dp"
+                android:background="@drawable/btn_selector7"
+                android:text="@string/RegisterN" />
+
+            <Button
+                android:id="@+id/r_btn_back_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/r_btn_register"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_selector9"
+                android:text="@string/Back_login" />
+
+            <TextView
+                android:id="@+id/r_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="66dp"
+                android:text="number"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- view_register_end -->
+
+
+    <!-- view_wjpassword_start -->
+
+    <FrameLayout
+        android:id="@+id/view_wjpassword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/wj_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/Reset_pwd"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/wj_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/wj_title"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btn_selector5ss"
+                android:hint="@string/Rgister_email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingLeft="6dp" />
+
+            <Button
+                android:id="@+id/wj_btn_send_number"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/wj_email"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_selector7"
+                android:text="@string/Send_verify_email" />
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- view_wjpassword_end -->
+
+</RelativeLayout>

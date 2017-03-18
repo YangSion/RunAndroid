@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/btns_focused2" >
+
+        <LinearLayout
+            android:id="@+id/llyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/ttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/gif_bg"
+                android:text="@string/Scores"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <com.ant.liao.GifView
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gif_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/llyou"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            tools:context=".HomeActivity" >
+        </com.ant.liao.GifView>
+
+        <TextView
+            android:id="@+id/tvm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

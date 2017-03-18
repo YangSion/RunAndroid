@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <!-- pressed -->
+    <item android:drawable="@drawable/btns_focused" android:state_focused="true"/>
+ <!-- enabled -->
+    <item android:drawable="@drawable/btns_focused" android:state_selected="true"/>
+ <!-- default -->
+    <item android:drawable="@android:color/transparent" android:state_enabled="true"/>
+
+</selector><!--     <item android:drawable="@color/touming" /> default -->
