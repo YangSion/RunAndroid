@@ -3,11 +3,14 @@
   
   1.手机检测
 https://github.com/CMythYang/RunAndroid/tree/master/RunAndroid/msg/0.jpeg
+  
   2.缓存清理
 https://github.com/CMythYang/RunAndroid/tree/master/RunAndroid/msg/1.jpeg
 https://github.com/CMythYang/RunAndroid/tree/master/RunAndroid/msg/2.jpeg
+  
   3.进程管理
 https://github.com/CMythYang/RunAndroid/tree/master/RunAndroid/msg/3.jpeg
 https://github.com/CMythYang/RunAndroid/tree/master/RunAndroid/msg/4.jpeg
+  
   4.软件/应用详情
 https://github.com/CMythYang/RunAndroid/tree/master/RunAndroid/msg/5.jpeg
