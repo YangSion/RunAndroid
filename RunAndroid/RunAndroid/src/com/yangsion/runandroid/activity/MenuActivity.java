@@ -187,7 +187,7 @@ public class MenuActivity extends BaseActivity implements OnClickListener {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			mTextDetailed.setText(getString(R.string.Detailed_S)+"https://github.com/CMythYang/RunAndroid");
+			mTextDetailed.setText(getString(R.string.Detailed_S)+"https://github.com/YangSion/RunAndroid");
 			mFrame_gy.setVisibility(View.INVISIBLE);
 			//显示frame
 			mFrame_app.setVisibility(View.VISIBLE);
